@@ -13,3 +13,12 @@
  *= require_tree .
  *= require_self
  */
+
+.shower {
+    color: green;
+    text-decoration-style: none;
+}
+
+body {
+    background-image: url("http://i.imgur.com/5OgflLo.png");
+}
