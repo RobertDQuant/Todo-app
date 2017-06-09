@@ -1,3 +1,8 @@
+<nav>
+<a href='/'>Home</a>
+<a href='/todos'>My Todos</a>
+</nav>
+
 <p>
   <strong>Title:</strong>
   <%= @todo.title %>
@@ -7,3 +12,5 @@
   <strong>Text:</strong>
   <%= @todo.text %>
 </p>
+
+<%= link_to 'Back', todos_path %>

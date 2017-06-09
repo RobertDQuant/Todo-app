@@ -1,0 +1,21 @@
+<nav>
+<a href='/'>Home</a>
+<a href='/todos'>My Todos</a>
+</nav>
+
+<h1>Listing Todos</h1>
+ <%= link_to 'New article', new_todo_path %>
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Text</th>
+  </tr>
+ 
+  <% @todos.each do |todo| %>
+    <tr>
+      <td><%= todo.title %></td>
+      <td><%= todo.text %></td>
+      <td><%= link_to 'Show', todo_path(todo) %></td>
+    </tr>
+  <% end %>
+</table>
