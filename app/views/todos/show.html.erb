@@ -1,6 +1,6 @@
 <nav>
-<a href='/'>Home</a>
-<a href='/todos'>My Todos</a>
+<a class="navLink" href='/'>Home</a>
+<a class="navLink" href='/todos'>Todos</a>
 </nav>
 
 <p>
@@ -16,7 +16,7 @@
 <h2>Comments</h2>
 <%= render @todo.comments %>
  
-<h2>Add a comment:</h2>
+<h2 class="addComment">Add a comment:</h2>
 <%= render 'comments/form' %>
  
 <%= link_to 'Edit', edit_todo_path(@todo) %> |
